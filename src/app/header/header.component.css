@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  position: sticky;
+  background-color: rgb(169, 210, 176);
+  gap: 2rem;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
