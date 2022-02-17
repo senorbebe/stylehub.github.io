@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.footer {
+  padding: 3rem 0;
+}
