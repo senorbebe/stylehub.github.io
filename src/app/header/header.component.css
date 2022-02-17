@@ -1,10 +1,20 @@
-.flex {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--color-primary);
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.logo {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.list {
+  list-style: none;
   display: flex;
   justify-content: flex-start;
-  color: white;
-  position: sticky;
-  background-color: rgb(169, 210, 176);
+  align-items: center;
   gap: 2rem;
-  padding-left: 3rem;
-  padding-top: 3rem;
 }
