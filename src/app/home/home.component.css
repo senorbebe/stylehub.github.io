@@ -28,6 +28,19 @@
   margin-top: 15rem;
 }
 
+.button-placement-first {
+  grid-column: 2;
+  grid-row: 6;
+  place-self: center;
+}
+
+.button-placement-second {
+  grid-column: 18 / span 3;
+  grid-row: 22;
+  place-self: end;
+
+}
+
 .other-fancy-button {
   grid-column: 2;
   grid-row: 6;
@@ -66,7 +79,7 @@
   width: 90%;
   height: 100vh;
   margin-left: 3.5rem;
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(22, 1fr);
   grid-template-columns: repeat(20, 1fr);
 }
 

@@ -2,7 +2,7 @@
 
   <div class="above-fold">
     <img class="image" src="assets/Bild.png" width="550" height="450" alt="Products"/>
-    <button class="other-fancy-button">Check it out now!</button>
+    <app-button class="button-placement-first" [caption]="'Jetzt ansehen!'" [style]="'primary'"></app-button>
   </div>
 
   <div class="second-fold">
@@ -18,5 +18,6 @@
         <li>hochwertig</li>
       </ul>
     </div>
+    <app-button class="button-placement-second" [caption]="'Check it out now!'" [iconDefinition]="faArrow" [style]="'secondary'"></app-button>
   </div>
 </div>
