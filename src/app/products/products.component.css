@@ -13,19 +13,32 @@
   }
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 25%;
-  justify-content: space-evenly;
-  gap: 10px;
-  text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
+.product-blue {
+  background-color: var(--color-accent-blue);
 }
 
-.flex > * {
-  flex: 2 2 45%;
+.product-green {
+  background-color: var(--color-accent-green);
+}
+
+.product-yellow {
+  background-color: var(--color-accent-yellow);
+}
+
+.product-red {
+  background-color: var(--color-accent-red);
+}
+
+h1 {
+  text-align: center;
+}
+
+.refinement {
+  margin-top: 5rem;
+}
+
+h2 {
+  text-align: center;
 }
 
 .item {

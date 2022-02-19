@@ -7,6 +7,11 @@
   --color-white-hover: #eaeaea;
   --color-black: #000000;
   --color-black-hover: #292929;
+  --color-accent-blue: #afd9ff;
+  --color-accent-green: #a9d2a9;
+  --color-accent-yellow: #f0f33e;
+  --color-accent-red: #fe9c9c;
+
 }
 
 body{
