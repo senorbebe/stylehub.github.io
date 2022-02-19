@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
+  gap: 10px;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.item {
+  padding: 5%;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered {
+  transform: translate(-50%, -50%);
+}
