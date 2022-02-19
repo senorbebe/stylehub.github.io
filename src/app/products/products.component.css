@@ -1,11 +1,31 @@
 .grid {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 50% 50%; /*Make the grid smaller than the container*/
+  /*grid-template-columns: 50% 50%;*/ /*Make the grid smaller than the container*/
+  gap: 3rem;
+  text-align: left;
+  margin-inline: 3%;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 25%;
+  justify-content: space-evenly;
   gap: 10px;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.flex > * {
+  flex: 2 2 45%;
 }
 
 .item {
