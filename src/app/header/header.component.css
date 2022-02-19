@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: var(--color-primary);
+  background-color: white;
   align-items: center;
   padding-top: 1rem;
 }
@@ -13,8 +13,20 @@
 
 .list {
   list-style: none;
+  text-decoration: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
 }
+
+li > :not(a.active) {
+  text-decoration: none;
+  color: black;
+}
+
+
+li > a.active {
+  color: black;
+}
+

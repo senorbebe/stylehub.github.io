@@ -12,3 +12,13 @@
 .footer {
   padding: 3rem 0;
 }
+
+li > :not(a.active) {
+  text-decoration: none;
+  color: black;
+}
+
+
+li > a.active {
+  color: black;
+}
