@@ -3,9 +3,26 @@
   color: black;
 }
 
+.button-primary:hover {
+  background-color: var(--color-white-hover);
+}
+
 .button-secondary {
-  background-color: #a9d2a9;
+  background-color: var(--color-primary);
   color: black;
+}
+
+.button-secondary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.icon-primary {
+  color: black;
+}
+
+
+.icon-secondary {
+  color: var(--color-primary);
 }
 
 .button-inner {
@@ -13,22 +30,17 @@
   border: none;
   font-size: 1rem;
   cursor: pointer;
-}
-
-.button-inner:hover {
-  background-color: #EAEAEA;
-}
-
-.button-inner:hover * {
-  background-color: #EAEAEA;
+  transition: .3s;
 }
 
 .icon {
   margin-left: 1rem;
+  transition: .3s;
 }
 
 
 .button-outline-primary {
+  transition: .3s;
   display: flex;
   align-items: center;
   outline: solid 2px white;
@@ -37,17 +49,26 @@
 }
 
 .button-outline-primary:hover {
-  outline: solid 2px #EAEAEA;
+  outline: solid 2px var(--color-white-hover);
+}
+
+.button-outline-primary:hover > fa-icon {
+  color: var(--color-black-hover);
 }
 
 .button-outline-secondary {
+  transition: .3s;
   display: flex;
   align-items: center;
-  outline: solid 2px #a9d2a9;
+  outline: solid 2px var(--color-primary);
   outline-offset: 1em;
   background-color: transparent;
 }
 
 .button-outline-secondary:hover {
-  outline: solid 2px #a7d0a7;
+  outline: solid 2px var(--color-primary-hover);
+}
+
+.button-outline-secondary:hover > fa-icon{
+  color: var(--color-primary-hover);
 }

@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   font-family: Raleway, sans-serif;
-  --color-primary: rgb(169, 210, 176);
+  --color-primary: #a9d2a9;
+  --color-primary-hover: #97c097;
+  --color-white: #ffffff;
+  --color-white-hover: #eaeaea;
+  --color-black: #000000;
+  --color-black-hover: #292929;
 }
 
 body{

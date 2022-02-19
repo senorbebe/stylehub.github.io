@@ -1,4 +1,4 @@
-<div [ngClass]="['button-'+style, 'button-outline-'+style]">
+<div [ngClass]="['button-outline-'+style]">
   <button [ngClass]="['button-'+style, 'button-inner']">{{caption}}</button>
-  <fa-icon *ngIf="iconDefinition" [ngClass]="'icon'" size="2x" [icon]="iconDefinition"></fa-icon>
+  <fa-icon *ngIf="iconDefinition" [ngClass]="['icon', 'icon-'+style]" size="2x" [icon]="iconDefinition"></fa-icon>
 </div>
