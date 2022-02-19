@@ -12,53 +12,10 @@
   height: min(100vh - 78px - 1rem, 1000rem);
 }
 
-.button-fancy {
-  color: black;
-  background-color: transparent;
-  border: none;
-  top: 95%;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  box-shadow:
-  0 0 0 10px #ee6352,
-  0 0 0 20px #d45379,
-  0 0 0 30px #a4558f;
-  border-radius: .2em;
-  margin-left: 20rem;
-  margin-top: 15rem;
-}
-
 .button-placement-first {
   grid-column: 2;
   grid-row: 6;
   place-self: center;
-}
-
-.button-placement-second {
-  grid-column: 10 / span 14;
-  grid-row: 22;
-  justify-self: end;
-  align-self: center;
-
-}
-
-.other-fancy-button {
-  grid-column: 2;
-  grid-row: 6;
-  place-self: center;
-  background-color: white;
-  color: black;
-  outline: 2px solid white;
-  outline-offset: 1em;
-  border: none;
-  font-size: 1rem;
-  padding: 1em 2em;
-}
-
-.other-fancy-button:hover {
-  background-color: #DDDDDD;
-  cursor: pointer;
-
 }
 
 .image {
@@ -68,26 +25,34 @@
   grid-column: 2;
 }
 
-
 .second-fold-bold-text {
   font-size: 8rem;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 3;
 }
 
 .second-fold {
   display: grid;
-  width: 90%;
-  height: 100vh;
-  margin-left: 3.5rem;
-  grid-template-rows: repeat(22, 1fr);
-  grid-template-columns: repeat(20, 1fr);
+  margin-inline: 3%;
+}
+
+@media (min-width: 1628px) {
+  .second-fold {
+    grid-template-columns: 25% 75%;
+  }
+  .second-fold-fancy-outline {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1749px) {
+  .second-fold-fancy-outline {
+    margin-top: 5rem;
+    margin-inline: 3rem;
+  }
 }
 
 .second-fold-fancy-outline {
+  align-self: self-end;
   font-size: 3rem;
-  grid-row: 9 / span 11;
-  grid-column: 7 / span 14;
   padding: 2rem 2rem;
   box-shadow:
     0 0 0 10px #ee6352,
@@ -97,8 +62,4 @@
     0 0 0 50px #405378;
 
   border-radius: .2em;
-}
-
-.container {
-  width: 90%;
 }
