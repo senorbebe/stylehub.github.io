@@ -35,9 +35,10 @@
 }
 
 .button-placement-second {
-  grid-column: 18 / span 3;
+  grid-column: 10 / span 14;
   grid-row: 22;
-  place-self: end;
+  justify-self: end;
+  align-self: center;
 
 }
 
