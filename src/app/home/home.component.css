@@ -63,3 +63,9 @@
 
   border-radius: .2em;
 }
+
+.button-placement-second {
+  place-self: self-end;
+  margin-inline: 3rem;
+  margin-top: 7rem;
+}
