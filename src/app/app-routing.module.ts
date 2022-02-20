@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'products-component', component: ProductsComponent},
   {path: 'imprint-component', component: ImprintComponent},
   {path: 'privacy-policy-component', component: PrivacyPolicyComponent},
+  {path: '**', redirectTo: 'home-component', pathMatch: 'full'}
 ];
 
 @NgModule({

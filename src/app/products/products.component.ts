@@ -6,11 +6,17 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  show: boolean = true;
+  div = -1;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  showDetails(index: number) {
+    this.div = index;
   }
 
 }
