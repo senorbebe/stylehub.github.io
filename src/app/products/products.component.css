@@ -8,7 +8,6 @@
 .item {
   cursor: pointer;
   transition: .3s;
-  height: 82.4%;
   padding-top: 5%;
   font-size: 2rem;
   line-height: 1.5;
