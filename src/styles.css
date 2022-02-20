@@ -22,3 +22,8 @@ body{
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+button{
+  border: none;
+  background-color: transparent;
+}
