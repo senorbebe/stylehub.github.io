@@ -68,4 +68,28 @@
   place-self: self-end;
   margin-inline: 3rem;
   margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.third-fold {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: var(--color-primary);
+  min-height: 1vh;
+}
+
+.third-fold > * {
+  flex-basis: 100%;
+}
+
+@media (max-width: 1322px) {
+  .third-fold {
+    flex-wrap: wrap;
+  }
+
+  .third-fold > *:nth-child(2) {
+    margin-inline: 5rem;
+  }
 }
