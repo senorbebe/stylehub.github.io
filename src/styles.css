@@ -8,9 +8,13 @@
   --color-black: #000000;
   --color-black-hover: #292929;
   --color-accent-blue: #afd9ff;
+  --color-accent-blue-hover: #cfebff;
   --color-accent-green: #a9d2a9;
+  --color-accent-green-hover: #c9f2c9;
   --color-accent-yellow: #f0f33e;
+  --color-accent-yellow-hover: #ffff8e;
   --color-accent-red: #fe9c9c;
+  --color-accent-red-hover: #fecccc;
 
 }
 

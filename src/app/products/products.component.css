@@ -5,6 +5,18 @@
   margin-inline: 3%;
 }
 
+.item {
+  cursor: pointer;
+  transition: .3s;
+  height: 82.4%;
+  padding-top: 5%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.item-shows-text {
+  margin-inline: 2rem;
+}
 
 
 @media (min-width: 700px) {
@@ -17,17 +29,37 @@
   background-color: var(--color-accent-blue);
 }
 
+.product-blue:hover {
+  background-color: var(--color-accent-blue-hover);
+}
+
+
 .product-green {
   background-color: var(--color-accent-green);
 }
+
+.product-green:hover {
+  background-color: var(--color-accent-green-hover);
+}
+
 
 .product-yellow {
   background-color: var(--color-accent-yellow);
 }
 
+.product-yellow:hover {
+  background-color: var(--color-accent-yellow-hover);
+}
+
+
 .product-red {
   background-color: var(--color-accent-red);
 }
+
+.product-red:hover {
+  background-color: var(--color-accent-red-hover);
+}
+
 
 .threeD-img {
   transform: translateY(10%);
