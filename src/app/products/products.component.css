@@ -86,3 +86,10 @@ h2 {
 .centered {
   transform: translate(-50%, -50%);
 }
+
+.product-details {
+  display: grid;
+  place-content: center;
+  padding-top: 0;
+  height: 88.7%;
+}
