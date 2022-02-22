@@ -1,4 +1,4 @@
-<button (click)="navToggele()" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+<button (click)="navToggele()" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation" [attr.aria-expanded]="menuOpen">
   <fa-icon *ngIf="!menuOpen" size="4x" [icon]="faBars"></fa-icon>
   <fa-icon *ngIf="menuOpen" size="4x" [icon]="faClose"></fa-icon>
   <span class="sr-only">Menü</span>
@@ -6,7 +6,7 @@
 <div class="grid" [ngClass]="{'header-home': router.url === '/home-component', 'header-not-home': router.url !== '/home-component'}">
 
   <nav>
-    <ul (click)="navToggele()"  id="primary-navigation" class="list primary-navigation" data-visible="false">
+    <ul id="primary-navigation" [ngClass]="{'open-nav': menuOpen, 'list': true}" (click)="navToggele()">
       <li class="logo-mobile-nav" *ngIf="menuOpen"><img src="assets/logo-black.png" alt="Logo Style Hub"/></li>
       <li><a routerLink="/home-component" routerLinkActive="active">Home</a></li>
       <li><a routerLink="/products-component" routerLinkActive="active">Produkte</a></li>
