@@ -31,7 +31,7 @@
   margin-inline: 3%;
 }
 
-@media (min-width: 1628px) {
+@media (min-width: 1563px) {
   .second-fold {
     grid-template-columns: 25% 75%;
   }
@@ -69,21 +69,26 @@
 }
 
 .third-fold {
-  display: flex;
+  display: grid;
   gap: 5rem;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  place-content: center;
   background-color: var(--color-primary);
-  min-height: 1vh;
 }
 
 .third-fold > * {
   flex-basis: 100%;
 }
 
+.button-placement-third {
+  grid-column: 2;
+  place-self: self-end;
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
+
 @media (max-width: 1322px) {
   .third-fold {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .third-fold > *:nth-child(2) {
