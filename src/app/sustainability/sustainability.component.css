@@ -1,0 +1,14 @@
+.grid {
+  display: grid;
+}
+
+.fancy-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  place-self: center;
+}
+
+.hero {
+  text-align: left;
+  font-size: 18rem;
+}
