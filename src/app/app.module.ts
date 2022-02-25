@@ -12,6 +12,7 @@ import {ProductsComponent} from './products/products.component';
 import {ImprintComponent} from './imprint/imprint.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {ContactComponent} from './contact/contact.component';
+import { SustainabilityComponent } from './sustainability/sustainability.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {ContactComponent} from './contact/contact.component';
     ProductsComponent,
     ImprintComponent,
     PrivacyPolicyComponent,
-    ContactComponent
+    ContactComponent,
+    SustainabilityComponent
   ],
   imports: [
     BrowserModule,

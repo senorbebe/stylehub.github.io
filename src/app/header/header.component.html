@@ -3,15 +3,15 @@
   <fa-icon *ngIf="menuOpen" size="4x" [icon]="faClose"></fa-icon>
   <span class="sr-only">Menü</span>
 </button>
-<div class="grid" [ngClass]="{'header-home': router.url === '/home-component', 'header-not-home': router.url !== '/home-component'}">
+<div class="grid" [ngClass]="{'header-home': router.url === '/home', 'header-not-home': router.url !== '/home'}">
 
   <nav>
     <ul id="primary-navigation" [ngClass]="{'open-nav': menuOpen, 'list': true}" (click)="navToggele()">
       <li class="logo-mobile-nav" *ngIf="menuOpen"><img src="assets/logo-black.png" alt="Logo Style Hub"/></li>
-      <li><a routerLink="/home-component" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/products-component" routerLinkActive="active">Produkte</a></li>
-      <li><a routerLink="/sustainability-component" routerLinkActive="active">Nachhaltigkeit</a></li>
-      <li><a routerLink="/contact-component" routerLinkActive="active">Kontakt</a></li>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/produkte" routerLinkActive="active">Produkte</a></li>
+      <li><a routerLink="/nachhaltigkeit" routerLinkActive="active">Nachhaltigkeit</a></li>
+      <li><a routerLink="/kontaktt" routerLinkActive="active">Kontakt</a></li>
     </ul>
   </nav>
 

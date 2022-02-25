@@ -4,13 +4,15 @@ import {HomeComponent} from "./home/home.component";
 import {ProductsComponent} from "./products/products.component";
 import {ImprintComponent} from "./imprint/imprint.component";
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
+import {SustainabilityComponent} from "./sustainability/sustainability.component";
 
 const routes: Routes = [
-  {path: 'home-component', component: HomeComponent},
-  {path: 'products-component', component: ProductsComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'produkte', component: ProductsComponent},
   {path: 'imprint-component', component: ImprintComponent},
   {path: 'privacy-policy-component', component: PrivacyPolicyComponent},
-  {path: '**', redirectTo: 'home-component', pathMatch: 'full'}
+  {path: 'nachhaltigkeit', component: SustainabilityComponent},
+  {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
