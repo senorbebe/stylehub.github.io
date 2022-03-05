@@ -10,5 +10,64 @@
 
 .hero {
   text-align: left;
-  font-size: 18rem;
+  font-size: clamp(2rem, 17vw, 25rem);
+}
+
+.fancy-lines {
+  gap: 10rem;
+}
+
+
+
+.fancy-text {
+  white-space: nowrap;
+  padding-inline: 2rem;
+}
+
+.fancy-text-outline {
+  color: white;
+  -webkit-text-stroke: 3px black;
+  white-space: nowrap;
+}
+
+#text-two {
+  transform: translateX(-30rem);
+}
+
+#text-three {
+  transform: translateX(-7rem);
+  overflow-x: hidden;
+}
+
+#text-four {
+  transform: translateX(-75rem);
+}
+
+#text-five {
+  transform: translateX(-5rem);
+}
+
+.font-xxl {
+  font-size: 14rem;
+}
+
+.font-xl {
+  font-size: 11rem;
+}
+
+.font-l {
+  font-size: 9rem;
+}
+
+.font-m {
+  font-size: 8rem;
+}
+
+.font-s {
+  font-size: 6rem;
+}
+
+.fancy-lines > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
