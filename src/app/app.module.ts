@@ -12,8 +12,9 @@ import {ProductsComponent} from './products/products.component';
 import {ImprintComponent} from './imprint/imprint.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {ContactComponent} from './contact/contact.component';
-import { SustainabilityComponent } from './sustainability/sustainability.component';
-
+import {SustainabilityComponent} from './sustainability/sustainability.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { SustainabilityComponent } from './sustainability/sustainability.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

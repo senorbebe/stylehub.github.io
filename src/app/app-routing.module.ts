@@ -5,6 +5,7 @@ import {ProductsComponent} from "./products/products.component";
 import {ImprintComponent} from "./imprint/imprint.component";
 import {PrivacyPolicyComponent} from "./privacy-policy/privacy-policy.component";
 import {SustainabilityComponent} from "./sustainability/sustainability.component";
+import {ContactComponent} from "./contact/contact.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'imprint-component', component: ImprintComponent},
   {path: 'privacy-policy-component', component: PrivacyPolicyComponent},
   {path: 'nachhaltigkeit', component: SustainabilityComponent},
+  {path: 'kontakt', component: ContactComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
