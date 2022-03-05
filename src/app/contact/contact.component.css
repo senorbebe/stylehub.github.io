@@ -1,3 +1,10 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: auto;
+}
+
 .hidden {
   display: none
 }
@@ -6,37 +13,27 @@
   display: block
 }
 
-.center-text {
-  text-align: center
-}
-
-form.contact {
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
-input,
 button {
-  margin-bottom: 10px;
-}
-
-button {
-  margin-top: 10px;
   background-color: transparent;
   color: black;
   border: 1px solid black;
-  padding: 4px 16px;
+  padding: 5%;
   transition: 0.4s;
-  width: 100%;
-  margin-top: 10px;
+  width: 75%;
+  margin: auto;
+  margin-top: 5%;
 }
 
 button:hover:enabled {
   color: white;
   background-color: black;
+}
+
+input, textarea {
+  padding: 2.5%;
+  resize: none;
+}
+
+.item {
+  padding: 2%;
 }

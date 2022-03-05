@@ -3,15 +3,17 @@
     source="https://script.google.com/macros/s/AKfycbzeBRHARoMvLiMp--q31l1L1MViWpYBUG4aa36a10sOMAqRJvzMu3ZKiDp_qztWyMx0/exec"></script>
 </head>
 <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-  Name
-  <input [formControl]="name" required>
-  Email
-  <input [formControl]="email" placeholder="email@example.com" required>
-  Message
-  <textarea [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
-  <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
-  <input [formControl]="honeypot" class="hidden" type="text"/>
-  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+  <h1 style="text-align: center">Kontaktformular</h1>
+  <label class="item">Name</label>
+  <input [formControl]="name" required class="item">
+  <label class="item">E-Mail</label>
+  <input [formControl]="email" placeholder="max@mustermann.de" required class="item">
+  <label class="item">Nachricht</label>
+  <textarea class="item" [formControl]="message" maxlength="256"
+            placeholder="Angebot anfordern, Produktvorstellung, Sonstiges" required></textarea>
+  <button class="item" [disabled]="isLoading" class="submit" type="submit">Submit</button>
+  <input class="item" [formControl]="honeypot" class="hidden" type="text"/>
+  <div class="item" [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
     <span>{{responseMessage}}</span>
   </div>
 </form>
