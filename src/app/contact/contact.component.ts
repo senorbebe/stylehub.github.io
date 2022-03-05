@@ -39,13 +39,13 @@ export class ContactComponent implements OnInit {
       formData.append("message", this.form.get("message")?.value);
       this.isLoading = true; // sending the post request async so it's in progress
       this.submitted = false; // hide the response message on multiple submits
-      this.http.post("YOUR GOOGLE WEB APP URL HERE", formData).subscribe(
+      this.http.post("https://script.google.com/macros/s/AKfycbzeBRHARoMvLiMp--q31l1L1MViWpYBUG4aa36a10sOMAqRJvzMu3ZKiDp_qztWyMx0/exec", formData).subscribe(
         (response) => {
           // choose the response message
           if (response == "success") { //if (response["result"] == "success") {
-            this.responseMessage = "Thanks for the message! I'll get back to you soon!";
+            this.responseMessage = "Vielen Dank für Ihre Nachricht, wir kommen in den nächsten 24 Stunden auf Sie zurück!";
           } else {
-            this.responseMessage = "Oops! Something went wrong... Reload the page and try again.";
+            this.responseMessage = "Upsi, da ist etwas schief gegangen.";
           }
           this.form.enable(); // re enable the form after a success
           this.submitted = true; // show the response message
@@ -53,7 +53,7 @@ export class ContactComponent implements OnInit {
           console.log(response);
         },
         (error) => {
-          this.responseMessage = "Oops! An error occurred... Reload the page and try again.";
+          this.responseMessage = "Upsi, da ist etwas schief gegangen.";
           this.form.enable(); // re enable the form after a success
           this.submitted = true; // show the response message
           this.isLoading = false; // re enable the submit button
