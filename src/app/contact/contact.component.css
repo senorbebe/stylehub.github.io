@@ -1,8 +1,37 @@
 .contact {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  margin: auto;
+  display: grid;
+  margin-inline: 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-form {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+}
+
+#submit-button {
+  justify-self: center;
+  align-self: end;
+}
+
+@media (min-width: 700px) {
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-inline: 10rem;
+  }
+
+  #message-field {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+
+  #submit-button {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+  }
 }
 
 .hidden {
@@ -13,27 +42,35 @@
   display: block
 }
 
-button {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  padding: 5%;
-  transition: 0.4s;
-  width: 75%;
-  margin: auto;
-  margin-top: 5%;
-}
-
-button:hover:enabled {
-  color: white;
-  background-color: black;
-}
-
 input, textarea {
-  padding: 2.5%;
   resize: none;
 }
 
-.item {
-  padding: 2%;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+input {
+  border: var(--color-primary) .15em solid;
+  border-radius: .3em;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+}
+
+.message-field {
+  min-height: 5rem;
+  padding: 1rem 1rem;
+  border: .15em solid var(--color-primary);
+  border-radius: .3em;
+  font-size: 1rem;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border: .15em solid var(--color-primary); /* green */
+}
+
+.ng-invalid:not(form)  {
+  border: .15em solid #a94442; /* red */
 }

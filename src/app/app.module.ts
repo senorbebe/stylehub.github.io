@@ -13,7 +13,7 @@ import {ImprintComponent} from './imprint/imprint.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
 import {ContactComponent} from './contact/contact.component';
 import {SustainabilityComponent} from './sustainability/sustainability.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -33,7 +33,7 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],

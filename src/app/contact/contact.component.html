@@ -1,15 +1,41 @@
-<form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+<div class="contact-form">
+  <div>
   <h1 style="text-align: center">Kontaktformular</h1>
-  <label class="item">Name</label>
-  <input [formControl]="name" required class="item">
-  <label class="item">E-Mail</label>
-  <input [formControl]="email" placeholder="max@mustermann.de" required class="item">
-  <label class="item">Nachricht</label>
-  <textarea class="item" [formControl]="message" maxlength="256"
-            placeholder="Angebot anfordern, Produktvorstellung, Sonstiges" required></textarea>
-  <button class="item" [disabled]="isLoading" class="submit" type="submit">Submit</button>
-  <input class="item" [formControl]="honeypot" class="hidden" type="text"/>
-  <div class="item" [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-    <span>{{responseMessage}}</span>
+  <form class="contact" (ngSubmit)="onSubmit()" #contactForm="ngForm" method="post">
+
+    <div class="form-group">
+      <label class="form-label" for="firstName">Vorname</label>
+      <input id="firstName" class="form-control" type="text" [(ngModel)]="model.firstName" placeholder="Vorname" name="firstName" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="lastName">Nachname</label>
+      <input class="form-input" id="lastName" type="text" [(ngModel)]="model.lastName" placeholder="Nachname" name="lastName" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="email">E-Mail</label>
+      <input id="email" type="text" [(ngModel)]="model.email" name="email" email placeholder="max@mustermann.de" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="company">Unternehmen</label>
+      <input id="company" type="text" [(ngModel)]="model.company" placeholder="Style Hub" name="company" required>
+    </div>
+
+    <div id="message-field" class="form-group">
+      <label class="form-label" for="message">Nachricht</label>
+      <textarea id="message" class="message-field" [(ngModel)]="model.message" maxlength="256"
+                placeholder="Angebot anfordern, Produktvorstellung, Sonstiges" name="message" required></textarea>
+    </div>
+
+    <app-button id="submit-button" [type]="'submit'" [caption]="'Absenden'" [style]="'secondary'"></app-button>
+<!--    <input [formControl]="honeypot" class="hidden" type="text"/>-->
+
+<!--    <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">-->
+<!--      <span>{{responseMessage}}</span>-->
+<!--    </div>-->
+
+  </form>
   </div>
-</form>
+</div>
