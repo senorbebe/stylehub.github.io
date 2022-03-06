@@ -12,6 +12,7 @@ export class ButtonComponent {
   @Input() iconDefinition: IconDefinition | undefined;
   @Input() caption: string = "";
   @Input() style: 'primary' | 'secondary' = 'primary';
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
 
 
 }
