@@ -1,5 +1,11 @@
 .grid {
   display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+h1 {
+  margin: 0;
 }
 
 .fancy-underline {
@@ -13,61 +19,68 @@
   font-size: clamp(2rem, 17vw, 25rem);
 }
 
-.fancy-lines {
-  gap: 10rem;
-}
-
-
-
 .fancy-text {
   white-space: nowrap;
   padding-inline: 2rem;
+  overflow: hidden;
 }
 
 .fancy-text-outline {
   color: white;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: .03em black;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 #text-two {
-  transform: translateX(-30rem);
+  margin-left: -35%;
 }
 
 #text-three {
-  transform: translateX(-7rem);
-  overflow-x: hidden;
+  margin-left: -5%;
+
 }
 
 #text-four {
-  transform: translateX(-75rem);
+  margin-left: -71%;
 }
 
 #text-five {
-  transform: translateX(-5rem);
+  margin-left: -10%;
 }
 
 .font-xxl {
-  font-size: 14rem;
+  font-size: clamp(2rem, 14vw, 25rem);
 }
 
 .font-xl {
-  font-size: 11rem;
+  font-size: clamp(2rem, 11vw, 25rem);
 }
 
 .font-l {
-  font-size: 9rem;
+  font-size: clamp(2rem, 9vw, 25rem);
+
 }
 
 .font-m {
-  font-size: 8rem;
+  font-size: clamp(2rem, 8vw, 25rem);
 }
 
 .font-s {
-  font-size: 6rem;
+  font-size: clamp(2rem, 6vw, 25rem);
 }
 
 .fancy-lines > * {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.section-questions {
+  display: flex;
+  background-color: var(--color-primary);
+  color: black;
+  height: 100vh;
+  place-items: center;
+  place-content: center;
+  font-size: clamp(2rem, 8vw, 25rem);
 }
