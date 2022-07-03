@@ -67,10 +67,10 @@ input {
   font-size: 1rem;
 }
 
-.ng-valid[required], .ng-valid.required  {
+.ng-valid[required], .ng-valid.required.ng-dirty  {
   border: .15em solid var(--color-primary); /* green */
 }
 
-.ng-invalid:not(form)  {
+.ng-invalid:not(form).ng-dirty  {
   border: .15em solid #a94442; /* red */
 }
