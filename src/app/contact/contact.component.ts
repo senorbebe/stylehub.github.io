@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {EmailValidator, FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +8,7 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  constructor(private http:HttpClient){}
 
   /*form: FormGroup;
   firstName: FormControl = new FormControl("", [Validators.required]);
@@ -34,7 +35,13 @@ export class ContactComponent {
   }*/
 
   onSubmit() {
-    console.log(this.model)
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    this.http.post('https://formspree.io/f/xdobreab', { firstName: this.model.firstName, lastName: this.model.lastName, company: this.model.company, replyto: this.model.email, message: this.model.message },
+    { 'headers': headers }).subscribe(
+      response => {
+        console.log(response);
+      }
+    );
   }
 
   /*onSubmit() {
